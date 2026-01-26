@@ -234,7 +234,7 @@ The agent generates a "Pivot Business Case" (PDF Memo) which justifies the recom
 
 ### 3. Human Accountability
 The agent acts as a drafter and advisor. It does not have the authority to sign the Change Request or move funds.
-*   **Evaluation:** Legal liability remains strictly with the Product Manager who reviews and submits the generated generated memo, and the Steering Committee that approves it. The AI is a tool, not an agent of authority.
+*   **Evaluation:** Legal liability remains strictly with the Product Manager who reviews and submits the generated memo, and the Steering Committee that approves it. The AI is a tool, not an agent of authority.
 *   **Risk Level:** **Low**
 
 ---
