@@ -252,3 +252,10 @@ The agent acts as a drafter and advisor. It does not have the authority to sign 
 1.  **Enterprise Data Contract:** Must use an LLM provider with a "No Training on Customer Data" guarantee to protect corporate strategy.
 2.  **PII Sanitization:** The agent must only ingest aggregated metrics (e.g., "15% Churn"), not raw user lists, to bypass severe data residency friction.
 3.  **Human Tollgate:** The generated "Pivot Request" must require a digital signature from the human Manager before submission to Finance.
+
+
+
+logs from Agent:
+![alt text](image1.png)
+![alt text](image2.png)
+![alt text](image3.png)
