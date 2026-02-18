@@ -1,0 +1,51 @@
+Product Requirements Document (PRD): AI Manager
+
+1. Overview
+This document specifies the requirements for a Python implementation of an AI Manager class. The goal is to create a robust, error-tolerant class that can read text files and generate mock strategic estimations.
+
+2. Class Definition
+Class Name: `AIManager`
+
+3. Attributes
+The class must be initialized with the following attributes:
+- `name` (str): The name of the AI manager. Must be a non-empty string.
+- `description` (str): A brief description of the manager's role. Must be a non-empty string.
+
+4. Methods
+
+Method Name: `estimate(file_path: str) -> dict`
+
+Requirements:
+4.1. Input Validation:
+- The method must accept a single argument `file_path` which must be a string.
+- If `file_path` is not a string, the method must raise a `TypeError` with the message "File path must be a string."
+
+4.2. File Handling:
+- The method must verify that the file exists at the given path.
+- If the file does not exist, the method must raise a `FileNotFoundError` with a clear message including the filename.
+- The method must strictly open the file in read-only mode ('r') with 'utf-8' encoding.
+
+4.3. Content Processing:
+- The method reads the content of the file.
+- If the file is empty, the method must return a default result indicating "No content to analyze".
+
+4.4. Estimation Logic (Mock):
+- The method performs a mock analysis on the text.
+- It calculates a `strategy_score` based on the word count of the file (e.g., min(100, word_count)).
+- It generates a `summary` string based on the first 10 words of the text.
+
+4.5. Return Value:
+- The method MUST return a dictionary (dict) with the following structure:
+  {
+    "strategy_score": <int>,
+    "summary": <str>,
+    "status": "success"
+  }
+
+5. Code Style & Documentation
+- The code must be PEP 8 compliant.
+- The class and method must have docstrings explaining their purpose, arguments, and return values.
+- Type hinting is mandatory for all method signatures.
+
+6. Security
+- The code must not execute any content from the file (no `eval()` or `exec()`).
